@@ -2,8 +2,13 @@ package colecciones;
 
 //import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class App {
 
@@ -22,20 +27,44 @@ public class App {
 //			
 //		}
 //		
+<<<<<<< HEAD
 		List<Persona> l = new LinkedList<Persona>();
 		l.add(new Persona("facu","mar"));
 		l.add(new Persona("juan","perez"));
 		l.add(new Persona("pablo","lopez"));
+=======
+//		LinkedList<Persona> l = new LinkedList<Persona>();
+//		Set<Persona> lista = new HashSet<Persona>();
+		Set<Persona> lista = new TreeSet<Persona>();
+		
+		
+		lista.add(new Persona("facu","mar"));
+		lista.add(new Persona("juan","perez"));
+		lista.add(new Persona("pablo","lopez"));
+>>>>>>> 915b042beea84177c3dc41e6ef48749049f7c648
 
-		for (Persona p : l) {
-			System.out.println(p.toString());
-		}
+//		for (Persona p : l) {
+//			System.out.println(p.toString());
+//		}
 		
-		Collections.sort(l);
+		Map mapa = new HashMap();
 		
-		for (Persona p : l) {
-			System.out.println(p.toString());
+		mapa.put("nombre", "Facundo");
+		mapa.put("apellido", "Mariño");
+		
+//		Object o = mapa.get("nombre");
+//		System.out.println(o.toString());
+		
+		Set claves = mapa.keySet();
+		
+		for (Object obj : claves) {
+			System.out.println(mapa.get(obj).toString());
 		}
+//		Collections.sort(l);
+//		
+//		for (Persona p : l) {
+//			System.out.println(p.toString());
+//		}
 	}
 
 }
