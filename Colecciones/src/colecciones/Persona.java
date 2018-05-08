@@ -1,6 +1,6 @@
 package colecciones;
 
-public class Persona implements Comparable{
+public class Persona implements Comparable<Persona>{
 public String nombre;
 public String apellido;
 
@@ -16,8 +16,8 @@ public Persona(String nom, String apell) {
 	}
 
 @Override
-public int compareTo(Object o) {
-    Persona p = (Persona) o;
+public int compareTo(Persona o) {
+    Persona p = o;
 	return this.apellido.compareTo(p.apellido);
 }
 

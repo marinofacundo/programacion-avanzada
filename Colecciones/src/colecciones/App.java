@@ -1,6 +1,6 @@
 package colecciones;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -22,7 +22,7 @@ public class App {
 //			
 //		}
 //		
-		LinkedList<Persona> l = new LinkedList<Persona>();
+		List<Persona> l = new LinkedList<Persona>();
 		l.add(new Persona("facu","mar"));
 		l.add(new Persona("juan","perez"));
 		l.add(new Persona("pablo","lopez"));
